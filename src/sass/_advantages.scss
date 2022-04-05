@@ -20,7 +20,7 @@
   margin-bottom: 38px;
 }
 
-.advantages__items::before {
+.advantages__title::before {
   content: '';
   display: block;
   height: 50px;
@@ -29,15 +29,15 @@
   background-repeat: no-repeat;
 }
 
-.advantages__items--sun::before {
+.advantages__titel--sun::before {
   background-image: url(../images/advantages/sun.png);
 }
 
-.advantages__items--apple::before {
+.advantages__titel--apple::before {
   background-image: url(../images/advantages/apple.png);
 }
 
-.advantages__items--heart::before {
+.advantages__titel--heart::before {
   background-image: url(../images/advantages/heart.png);
 }
 
@@ -51,7 +51,7 @@
   margin-bottom: 20px;
 }
 
-.advantages__subtitle {
+.advantages__text {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
