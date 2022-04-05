@@ -1,0 +1,59 @@
+.advantages {
+  background-color: #fff5f6;
+}
+
+.visualy__hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages__items:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.advantages__items::before {
+  content: '';
+  display: block;
+  height: 50px;
+  margin-bottom: 16px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.advantages__items--sun::before {
+  background-image: url(../images/advantages/sun.png);
+}
+
+.advantages__items--apple::before {
+  background-image: url(../images/advantages/apple.png);
+}
+
+.advantages__items--heart::before {
+  background-image: url(../images/advantages/heart.png);
+}
+
+.advantages__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  margin-bottom: 20px;
+}
+
+.advantages__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+}
