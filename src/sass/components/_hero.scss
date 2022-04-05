@@ -1,0 +1,39 @@
+.hero__section {
+padding-top: 137px;
+padding-bottom: 160px;  
+
+background-color:$heroBgColor;
+
+@include mq(mobile-only) {
+    
+    background-image: url('../images/hero-img-circle-mobile-1x'),
+    url('../images/hero-img-1-mobile-1x');
+
+    @include mq(retina){
+background-image: url('../images/hero-img-circle-mobile-2x'),
+url('../images/hero-img-1-mobile-2x');
+    };
+
+    @include mq(retina3x) {
+        background-image: url('../images/hero-img-circle-mobile-3x'),
+            url('../images/hero-img-1-mobile-3x');
+    }
+};
+
+background-size:
+cover;
+background-repeat:
+no-repeat;
+background-position: left 36px, top 83px, left 117px, top 92px;
+}
+.hero__title {
+    font-family: 'Titan One';
+    @include fonts(normal, 400, 26px, 30px); 
+    
+    color: white;
+
+    text-transform: uppercase;
+}
+.hero__title--dark {
+    color:$accentColor;
+}
