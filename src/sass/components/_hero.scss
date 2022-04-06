@@ -2,8 +2,78 @@
 padding-top: 193px;
 padding-bottom: 160px;  
 
-background-color:$heroBgColor ;
+background-color:$heroBgColor;
+
+    @include mq(mobile-only) {
+    
+        background-image: url('../images/hero/img-1/hero-img-1-mobile-1x.png'),
+            url('../images/hero/circle/hero-img-circle-mobile-1x.png');
+    
+        @include mq(retina) {
+            background-image: url('../images/hero/img-1/hero-img-1-mobile-2x.png'),
+                url('../images/hero/circle/hero-img-circle-mobile-2x.png');
+        }
+        
+        background-position: right 32px bottom 0,
+        right 0 center;
+
+        background-size:171px 410px, 284px 344px;
+
+        min-height: 502px;
+    
+    }
+    
+    @include mq(tablet-only) {
+    
+        background-image: url('../images/hero/img-1/hero-img-1-tabl-1x.png'),
+        url('../images/hero/img-3/hero-img-3-tabl-1x.png'),
+            url('../images/hero/circle/hero-img-circle-tabl-1x.png'),
+            url('../images/hero/img-2/hero-img-2-tabl-1x.png');
+    
+        @include mq(retina) {
+            background-image: url('../images/hero/img-1/hero-img-1-tabl-2x.png'), url('../images/hero/img-3/hero-img-3-tabl-2x.png'),
+            url('../images/hero/circle/hero-img-circle-tabl-2x.png'),
+            url('../images/hero/img-2/hero-img-2-tabl-2x.png');
+        }
+        
+        background-position: right 247px bottom 0, right 34px bottom 0, right 137px bottom 46px, left 34px bottom 28px;
+        
+        background-size:143px 336px, 168px 133px, 324px 322px, 124px 126px;
+        padding-top: 102px;
+        padding-bottom: 34px;
+        
+
+        min-height: 400px;
+    }
+@include mq(desktop) {
+
+    background-image: url('../images/hero/img-1/hero-img-1-desk-1x.png'),
+        url('../images/hero/img-3/hero-img-3-desk-1x.png'),
+        url('../images/hero/circle/hero-img-circle-desk-1x.png');
+
+    @include mq(retina) {
+        background-image: url('../images/hero/img-1/hero-img-1-desk-2x.png'), url('../images/hero/img-3/hero-img-3-desk-2x.png'),
+            url('../images/hero/circle/hero-img-circle-desk-2x.png');
+    }
+
+    background-size:236px 557px,
+    293px 232px,
+    538px 538px,
+    188px 191px;
+    background-position: right 450px bottom 0,
+    right 109px bottom 0,
+    right 267px bottom 46px;
+
+    padding-top: 171px;
+    padding-bottom: 35px;
+
+    min-height:665px;
 }
+
+    
+    background-repeat:no-repeat;
+}
+
 .hero__title {
     width: 218px;
     margin-bottom: 19px;
@@ -14,14 +84,35 @@ background-color:$heroBgColor ;
     color: white;
 
     text-transform: uppercase;
+    @include mq (tablet-only) {
+        width: 162px; 
+
+        @include fonts (normal, 400, 22px, 25px); 
+    }
 }
 .hero__title--dark {
-    @include fonts(normal, 400, 48px, 46px);
     color:$accentColor;
+
+    @include mq(mobile-only){
+        @include fonts(normal, 400, 48px, 46px);
+    }
+
+    @include mq(tablet-only){
+        @include fonts (normal, 400, 34px, 31px);
+    }
 }
 .hero__list {
     display: flex;
 }
 .hero__item:not(:last-child) {
     margin-right: 8px;
+}
+
+.hero__text {
+    @include mq(tablet){
+        color: white;
+
+        @include fonts (normal, 400, 8px, 12px);
+        font-family: $main-font;
+    }
 }
