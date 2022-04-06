@@ -3,12 +3,11 @@
 // Calculating line-height value to multiplier
 
 @function setLineHeight($lh, $fsz) {
-    $lh-value: $lh / $fsz;
+    $lh-value: #{$lh} / #{$fsz};
+    @return $lh-value;
 
-    @return decimal-round($lh-value, 3);
+    // @return decimal-round($lh-value, 3);
 }
-
-
 
 //Настройки шрифта//
 @mixin fonts($fs: normal, $fw: 500, $fsz: 12px, $lh: 19px, $ls: 0.04em) {
@@ -18,14 +17,6 @@
     line-height: setLineHeight($lh, $fsz);
     letter-spacing: $ls;
 }
-
-@function line-height($lh, $fsz) {
-    $line-height: math.round(#{$lh / $fsz} * 100) / 100;
-    ;
-
-    @return $line-height;
-}
-
 
 //Флексы//
 @mixin flex($ds: flex, $ai: center, $jc: center) {
@@ -85,6 +76,17 @@
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
+            @content;
+        }
+    }
+    @else if $range==retina3x {
+    
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (-moz-min-device-pixel-ratio: 3),
+        screen and (-o-min-device-pixel-ratio: 3/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
             @content;
         }
     }
