@@ -1,8 +1,16 @@
-@import './example';
-// @import './products';
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
 
+// Стили для файла с примером HTML-фрагмента
 
-@import './utils/mixins';
 @import './utils/variables';
+@import './base/common';
+@import './utils/decimals';
+@import './utils/mixins';
+@import './components/header';
+@import './components/burger-menu';
+@import './components/advantages';
 
 @import './components/hero';
