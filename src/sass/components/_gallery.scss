@@ -4,21 +4,23 @@
   margin-right: auto;
   padding: 0;
   padding-bottom: 32px;
-}
 
-.gallery__img {
-  background: linear-gradient(#fff5f6 40%, #ffffff 40%, #ffffff 60%);
+  background: linear-gradient(#fff5f6 32%, #ffffff 32%, #ffffff 68%);
   min-height: 122px;
   width: 100%;
   background-size: auto;
-  margin-left: auto;
-  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     min-height: 254px;
+    background: linear-gradient(#fff5f6 20%, #ffffff 20%, #ffffff 80%);
   }
 
   @media screen and (min-width: 1280) {
     min-height: 430px;
   }
+}
+
+.gallery__img {
+  margin-left: auto;
+  margin-right: auto;
 }
