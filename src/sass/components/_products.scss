@@ -22,12 +22,7 @@
 
 .products-item{
     position: relative;
-    margin-bottom: 129px;
-
-    &:last-child{
-        margin-bottom: 0;
-    }
-    
+    margin-top: 17px;
 }
 
 .products-title{
@@ -41,11 +36,25 @@
 
 .products-title::before{
     content: '';
-    background-image:url('../images/products/img-1/img-1-mobile-1x.png');
     display: block;
+    background-repeat: no-repeat;
     width: 250px;
     height: 250px;
-    margin: 0 auto;
+}
+
+.products-title__icecream::before{
+    background-image:url('../images/products/img-1/img-1-mobile-1x.png');
+    margin: 0 auto 22px auto;
+}
+
+.products-title__coffee::before{
+    background-image:url('../images/products/img-2/img-2-mobile-1x.png');
+    margin: 0 auto 22px auto;
+}
+
+.products-title__milkshakes::before{
+    background-image:url('../images/products/img-3/img-3-mobile-1x.png');
+    margin: 0 auto 22px auto;
 }
 
 .products-text{
@@ -76,4 +85,10 @@
 .products-button{
     border: none;
     background-color: transparent;
+}
+
+.products-button__wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
 }
