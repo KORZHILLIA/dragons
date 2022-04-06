@@ -6,9 +6,8 @@
 // Стили для файла с примером HTML-фрагмента
 
 @import './utils/variables';
-@import './base/common';
-@import './utils/decimals';
 @import './utils/mixins';
+@import './base/common';
 @import './components/header';
 @import './components/burger-menu';
 @import './components/advantages';
