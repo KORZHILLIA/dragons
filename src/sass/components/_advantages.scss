@@ -1,12 +1,12 @@
 .advantages {
-  background-color: #fff5f6;
+  background-color: $secondaryBgColor;
   padding-bottom: 145px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     padding-bottom: 140px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     padding-bottom: 139px;
   }
 }
@@ -25,42 +25,58 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .advantages__list {
+.advantages__list {
+  @include mq(tablet) {
     display: flex;
     gap: 60px;
+  }
+
+  @include mq(desktop) {
+    gap: 30px;
+    justify-content: center;
   }
 }
 
 .advantages__item {
   width: 230px;
 
-  @media screen and (max-width: 767px) {
+  @include mq(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 38px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     width: 180px;
+  }
+
+  @include mq(desktop) {
+    width: 330px;
   }
 }
 
 .advantages__title {
-  font-family: 'Titan One';
+  font-family: $support-font;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.13;
   letter-spacing: 0.04em;
 
-  color: #d41443;
+  color: $accentColor;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     font-size: 48px;
     line-height: 1.14;
+    margin-bottom: 13px;
+  }
+
+  @include mq(desktop) {
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 15px;
   }
 }
 
@@ -72,8 +88,12 @@
   background-color: transparent;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     margin-bottom: 36px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 40px;
   }
 }
 
@@ -90,14 +110,20 @@
 }
 
 .advantages__text {
-  font-family: 'DM Sans';
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     font-size: 14px;
     line-height: 1.74;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
   }
 }
