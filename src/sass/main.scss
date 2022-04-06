@@ -5,11 +5,23 @@
 
 // Стили для файла с примером HTML-фрагмента
 
+// Utils styles
 @import './utils/variables';
 @import './utils/mixins';
+
+// base styles
 @import './base/common';
+@import './base/buttons';
+
+// components
 @import './components/header';
 @import './components/burger-menu';
-@import './components/advantages';
-
 @import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
+
