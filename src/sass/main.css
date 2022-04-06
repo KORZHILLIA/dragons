@@ -34,23 +34,14 @@
   padding-top: 137px;
   padding-bottom: 160px;
   background-color: #FFB8CA;
+  background-image: url("./images/hero-img-circle-mobile-1x"), url("../images/hero-img-1-mobile-1x");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 36px, top 83px, left 117px, top 92px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero__section {
-    background-image: url("../images/hero-img-circle-mobile-1x"), url("../images/hero-img-1-mobile-1x");
-  }
-}
-@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-moz-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
-  .hero__section {
-    background-image: url("../images/hero-img-circle-mobile-2x"), url("../images/hero-img-1-mobile-2x");
-  }
-}
-@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 3), screen and (max-width: 767.98px) and (-moz-min-device-pixel-ratio: 3), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767.98px) and (min-resolution: 288dpi), screen and (max-width: 767.98px) and (min-resolution: 3dppx) {
-  .hero__section {
-    background-image: url("../images/hero-img-circle-mobile-3x"), url("../images/hero-img-1-mobile-3x");
+    background-image: url("./images/hero-img-circle-mobile-2x"), url("../images/hero-img-1-mobile-2x");
   }
 }
 
