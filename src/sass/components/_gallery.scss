@@ -3,11 +3,12 @@
   min-height: 122px;
   background-size: auto;
 
-  @media screen and (min-width: 678px) {
+  @include mq(tablet) {
     min-height: 264px;
+    background: linear-gradient($secondaryBgColor 40%, $whiteTextColor 40%, $whiteTextColor 60%);
   }
 
-  @media screen and (min-width: 1280px) {
+  @include mq(desktop) {
     min-height: 430px;
     background: linear-gradient($secondaryBgColor 37%, $whiteTextColor 38%, $whiteTextColor 62%);
   }
