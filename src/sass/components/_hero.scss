@@ -46,14 +46,15 @@ background-color:$heroBgColor;
         min-height: 400px;
     }
 @include mq(desktop) {
-
     background-image: url('../images/hero/img-1/hero-img-1-desk-1x.png'),
         url('../images/hero/img-3/hero-img-3-desk-1x.png'),
-        url('../images/hero/circle/hero-img-circle-desk-1x.png');
+        url('../images/hero/circle/hero-img-circle-desk-1x.png'),
+        url('../images/hero/img-2/hero-img-2-desk-1x.png');
 
     @include mq(retina) {
         background-image: url('../images/hero/img-1/hero-img-1-desk-2x.png'), url('../images/hero/img-3/hero-img-3-desk-2x.png'),
-            url('../images/hero/circle/hero-img-circle-desk-2x.png');
+            url('../images/hero/circle/hero-img-circle-desk-2x.png'),
+            url('../images/hero/img-2/hero-img-2-desk-2x.png');
     }
 
     background-size:236px 557px,
@@ -62,18 +63,21 @@ background-color:$heroBgColor;
     188px 191px;
     background-position: right 450px bottom 0,
     right 109px bottom 0,
-    right 267px bottom 46px;
+    right 267px bottom 46px, left 77px bottom 45px;
 
     padding-top: 171px;
     padding-bottom: 35px;
+    padding-left: 80px;
 
     min-height:665px;
 }
 
-    
     background-repeat:no-repeat;
 }
-
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
 .hero__title {
     width: 218px;
     margin-bottom: 19px;
@@ -88,6 +92,14 @@ background-color:$heroBgColor;
         width: 162px; 
 
         @include fonts (normal, 400, 22px, 25px); 
+
+        margin-bottom: 20px;
+    }
+    @include mq (desktop) {
+        width: 277px;
+        @include fonts (normal, 400, 38px, 44px);   
+
+        margin-bottom: 25px;
     }
 }
 .hero__title--dark {
@@ -100,19 +112,108 @@ background-color:$heroBgColor;
     @include mq(tablet-only){
         @include fonts (normal, 400, 34px, 31px);
     }
+    @include mq (desktop) {
+        @include fonts (normal, 400, 50px, 52px);
+    }
 }
 .hero__list {
     display: flex;
 }
 .hero__item:not(:last-child) {
     margin-right: 8px;
+
+    @include mq(desktop){
+        margin-right: 15px;
+    }
 }
 
 .hero__text {
+    display: none;
+
     @include mq(tablet){
+        display: block;
+
+        width: 114px;
+
         color: white;
 
         @include fonts (normal, 400, 8px, 12px);
         font-family: $main-font;
+
+        margin-top: 66px;
+        margin-left: 118px;
     }
+    @include mq(desktop) {
+        width: 200px;
+
+        @include fonts (normal, 400, 14px, 20px);
+
+        margin-top: 112px;
+        margin-left: 216px;
+    }
+}
+.hero__link {
+
+    @include mq(tablet) {
+        display: block;
+        
+        margin-top: 7px;
+        margin-left: 118px;
+        
+        padding: 6px;
+        
+        width: 18px;
+        height: 18px;
+        
+        border-radius: 50%;
+        
+        background-color: white;
+    };
+
+    @include mq(desktop) {
+        margin-top: 20px;
+        margin-left: 216px;
+
+        width: 26px;
+        height: 26px;
+    }
+    
+}
+.hero__icon {
+    @include flex();
+}
+
+.hero__box {
+    display: none;
+
+    @include mq(desktop) {
+        display: block;
+
+        margin-right: 97px;
+    }
+}
+
+.box__item {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+.box__text {
+    @include fonts(normal, 400, 46px, 53px);
+
+    font-family: $support-font;
+    
+    text-transform: uppercase;
+    
+    color:$accentColor;
+}
+
+.box__text--small {
+    @include fonts (normal, 400, 14px, 18px);
+    font-family: $main-font;
+
+    color:white;
+
+    text-align: right;
+    
 }
