@@ -3,7 +3,7 @@
 // Calculating line-height value to multiplier
 
 @function setLineHeight($lh, $fsz) {
-    $lh-value: #{$lh} / #{$fsz};
+    $lh-value: $lh;
     @return $lh-value;
 
     // @return decimal-round($lh-value, 3);
