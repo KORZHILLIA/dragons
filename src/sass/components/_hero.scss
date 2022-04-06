@@ -1,13 +1,14 @@
 .hero__section {
-padding-top: 137px;
+padding-top: 193px;
 padding-bottom: 160px;  
 
-
-
-
+background-color:$heroBgColor ;
 }
 .hero__title {
-    font-family: 'Titan One';
+    width: 218px;
+    margin-bottom: 19px;
+
+    font-family: $support-font;
     @include fonts(normal, 400, 26px, 30px); 
     
     color: white;
@@ -15,5 +16,12 @@ padding-bottom: 160px;
     text-transform: uppercase;
 }
 .hero__title--dark {
+    @include fonts(normal, 400, 48px, 46px);
     color:$accentColor;
+}
+.hero__list {
+    display: flex;
+}
+.hero__item:not(:last-child) {
+    margin-right: 8px;
 }
