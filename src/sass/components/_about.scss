@@ -1,49 +1,49 @@
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+// .container {
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-left: 20px;
+//     padding-right: 20px;
 
-    @media screen and (min-width:320px) {
-        width: 320px;
-    }
+//     @media screen and (min-width:320px) {
+//         width: 320px;
+//     }
 
-    @media screen and (min-width:768px) {
-        width: 768px;
-    }
+//     @media screen and (min-width:768px) {
+//         width: 768px;
+//     }
 
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-    }
-}
+//     @media screen and (min-width:1200px) {
+//         width: 1200px;
+//     }
+// }
 
-.section__text{
-    margin-bottom: 15px;
+// .section__text{
+//     margin-bottom: 15px;
 
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
-    text-align: center;
-    text-transform: uppercase;
+//     font-family: $support-font;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.16;
+//     text-align: center;
+//     text-transform: uppercase;
     
-    color: $secondaryTitleColor;
-}
-.section__title{
-    margin-bottom: 26px;
+//     color: $secondaryTitleColor;
+// }
+// .section__title{
+//     margin-bottom: 26px;
 
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+//     font-family: $support-font;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 34px;
+//     line-height: 1.14;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
     
-    color: $mainTitleColor;
-}
+//     color: $mainTitleColor;
+// }
 .section__about {
     padding-top: 125px;
     padding-bottom: 39px;
@@ -57,7 +57,7 @@
 }
 .about__text{
     width: 220px;
-    font-family: 'DM Sans';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -78,7 +78,7 @@
     min-width: 160px;
     width: 176px;
 
-    font-family: 'DM Sans';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
