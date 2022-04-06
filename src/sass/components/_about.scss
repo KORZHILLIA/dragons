@@ -1,3 +1,7 @@
+.section__about{
+    padding-top: 125px;
+    padding-bottom: 39px;
+}
 .section__text{
     margin-bottom: 15px;
 
@@ -29,6 +33,7 @@
     margin-bottom: 46px;
 }
 .about__text{
+    margin-bottom: 47px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -41,4 +46,7 @@
 }
 .about__text--sub{
     color: $mainTextColor;
+}
+.about__btn{
+    
 }
