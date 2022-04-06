@@ -28,7 +28,7 @@
 
 /* MEDIA QUERIES*/
 @mixin mq($range) {
-    $mobile: 480px;
+    $mobile: 320px;
     $tablet: 768px;
     $desktop: 1280px;
 
@@ -76,17 +76,6 @@
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            @content;
-        }
-    }
-    @else if $range==retina3x {
-    
-        @media screen and (min-device-pixel-ratio: 3),
-        screen and (-moz-min-device-pixel-ratio: 3),
-        screen and (-o-min-device-pixel-ratio: 3/1),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
             @content;
         }
     }
