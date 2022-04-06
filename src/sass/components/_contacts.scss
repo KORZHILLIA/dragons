@@ -1,0 +1,137 @@
+.contacts__container {
+  position: absolute;
+  width: 320px;
+  height: 1912px;
+  left: 0px;
+  top: 5204px;
+
+  background: #fff5f6;
+}
+.contacts__list-place {
+}
+.contacts__item-place {
+  position: absolute;
+  width: 220px;
+  height: 427px;
+  left: 50px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__place-cafe {
+  position: absolute;
+  width: 80px;
+  height: 16px;
+  left: 70px;
+  top: 5163px;
+
+  background: #f0d1a5;
+  border-radius: 4px;
+}
+.contacts__place-truck {
+  position: absolute;
+  width: 130px;
+  height: 16px;
+  left: 70px;
+  top: 5610px;
+
+  background: #c2e297;
+  border-radius: 4px;
+}
+.contacts__city {
+  position: absolute;
+  width: 89px;
+  height: 22px;
+  left: 70px;
+  top: 5651px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+.contacts__city-text {
+  position: absolute;
+  width: 179px;
+  height: 36px;
+  left: 70px;
+  top: 5683px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  color: #907e82;
+}
+.contacts__date {
+  position: absolute;
+  width: 107.17px;
+  height: 22px;
+  left: 70px;
+  top: 5769px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+
+  color: #000000;
+}
+.contacts__time {
+  position: absolute;
+  width: 161.9px;
+  height: 23px;
+  left: 70px;
+  top: 5789px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* identical to box height, or 22px */
+
+  color: #ffa5ba;
+}
+
+.contacts__list-contacts {
+}
+.contacts__item-contacts {
+  position: absolute;
+  width: 179px;
+  height: 37px;
+  left: 70px;
+  top: 5467px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  color: #907e82;
+}
+
+.contacts__time-work {
+}
+.contacts__btn {
+  &:hover,
+  &:focus {
+  }
+}
+.btn {
+}
