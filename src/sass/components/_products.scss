@@ -1,0 +1,53 @@
+.products{
+
+}
+
+.products-title-second{
+    @include mq(mobile){
+        font-family: "Titan One";
+        @include fonts(normal, 400, 18px, 1.16);
+        color: $secondaryTitleColor;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+.product-title-main{
+    @include mq(mobile){
+        font-family: "Titan One";
+        @include fonts(normal, 400, 34px, 1.14);
+        color: $mainTitleColor;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.products-item{
+    @include mq(mobile){
+        margin-bottom: 129px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    background-color:  #FFB8CA;
+    border-radius: 24px;
+}
+
+.products-title{
+    @include mq(mobile){
+        font-family: "Titan One";
+        @include fonts(normal, 400, 20px, 1.15);
+        color: $whiteTextColor;
+        text-align: center;
+    }
+}
+
+.products-text{
+    @include mq(mobile){
+        font-family: "DM Sans";
+        @include fonts(normal, 700, 14px, 1.5);
+        color: $whiteTextColor;
+        text-align: center;
+    }
+}
