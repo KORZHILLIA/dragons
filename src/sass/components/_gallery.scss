@@ -1,0 +1,24 @@
+.gallery .container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.gallery__img {
+  background: linear-gradient(#fff5f6 40%, #ffffff 40%, #ffffff 60%);
+  min-height: 122px;
+  width: 100%;
+  background-size: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    min-height: 254px;
+  }
+
+  @media screen and (min-width: 1280) {
+    min-height: 430px;
+  }
+}
