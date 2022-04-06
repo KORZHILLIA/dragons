@@ -13,11 +13,6 @@ background-color:$heroBgColor;
         background-image: url('../images/hero-img-circle-mobile-2x.png'),
         url('../images/hero-img-1-mobile-2x.png');
         };
-
-    @include mq(retina3x) {
-        background-image: url('../images/hero-img-circle-mobile-3x.png'),
-            url('../images/hero-img-1-mobile-3x.png');
-    }
 };
 
 background-size:
