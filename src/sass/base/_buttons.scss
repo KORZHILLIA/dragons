@@ -1,0 +1,20 @@
+.btn {
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    min-width: 63px;
+    height: 24px;
+
+    
+    font-family: $main-font;
+    @include fonts (normal, 400, 8px, 10px);
+}
+.btn--dark {
+background-color: $accentColor;
+color: white;
+}
+.btn--light {
+    background-color:white ;
+    color: $accentColor;
+}
