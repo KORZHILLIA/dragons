@@ -28,4 +28,7 @@
     border: none;
     background-color: inherit;
     cursor: pointer;
+    @media (min-width:768px) {
+        top: 52px;
+    }
 }
