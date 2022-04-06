@@ -20,7 +20,7 @@
 // .section__text{
 //     margin-bottom: 15px;
 
-//     font-family: 'Titan One';
+//     font-family: $support-font;
 //     font-style: normal;
 //     font-weight: 400;
 //     font-size: 18px;
@@ -33,7 +33,7 @@
 // .section__title{
 //     margin-bottom: 26px;
 
-//     font-family: 'Titan One';
+//     font-family: $support-font;
 //     font-style: normal;
 //     font-weight: 400;
 //     font-size: 34px;
@@ -52,9 +52,12 @@
 .about__image{
     margin-bottom: 46px;
 }
+.about__wraptext{
+    margin-left: 30px;
+}
 .about__text{
-    margin-bottom: 47px;
-    font-family: 'DM Sans';
+    width: 220px;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -63,8 +66,10 @@
 }
 .about__text--main{
     color: $blackTextColor;
+    margin-bottom: 25px;
 }
 .about__text--sub{
+    margin-bottom: 39px;
     color: $mainTextColor;
 }
 .about__btn{
@@ -73,7 +78,7 @@
     min-width: 160px;
     width: 176px;
 
-    font-family: 'DM Sans';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -84,4 +89,13 @@
     background: $primaryBgButton;
     border-radius: 22px;
     border: 0px;
+}
+.about__wrapper{
+    position: relative;
+    display: inline-block;
+}
+.about__icon{
+    position: absolute;
+    top: 19px;
+    right: 38px;
 }
