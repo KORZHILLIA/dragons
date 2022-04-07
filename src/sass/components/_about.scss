@@ -42,37 +42,8 @@
 //         }
 //     }
 // }
-.container-about{
-    @media screen and (max-width:767px) {
-        background-image: url('../images/about/img-5/img-5-mobile-1x.png');
-        background-size: 320px;
-        background-repeat: no-repeat;
-        background-position-y: 85%;
-    
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/about/img-5/img-5-mobile-2x.png');
-        }
-    }
-    @media screen and (min-width:1280px) {
-        width: 1280px;
-        padding-left: 114px;
-        padding-right: 114px;
-    
-        background-image: url('../images/about/img-5/img-5-desk-1x.png');
-        background-size: 1282px;
-        background-repeat: no-repeat;
-        background-position-y: 150%;
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/about/img-5/img-5-mobile-2x.png');
-        }
-    }
-}
+
+
 .section-about__text{
 
     margin-bottom: 15px;
@@ -122,7 +93,7 @@
         letter-spacing: 0.06em;
     }
 }
-.sectionx__about {
+.section__about {
     padding-top: 125px;
     padding-bottom: 39px;
     background-color: $secondaryBgColor;
@@ -131,6 +102,36 @@
     @media screen and (min-width:768px) and  (max-width:1279px) {
         padding-top: 130px;
         padding-bottom: 66px;
+    }
+    @media screen and (max-width:767px) {
+        background-image: url('../images/about/img-5/img-5-mobile-1x.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 85%;
+    
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/about/img-5/img-5-mobile-2x.png');
+        }
+    }
+    
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        padding-left: 114px;
+        padding-right: 114px;
+    
+        background-image: url('../images/about/img-5/img-5-desk-1x.png');
+        background-size: 1282px;
+        background-repeat: no-repeat;
+        background-position-y: 150%;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/about/img-5/img-5-mobile-2x.png');
+        }
     }
 }
 .about__content{

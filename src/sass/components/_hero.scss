@@ -120,6 +120,8 @@ background-color:$heroBgColor;
     position: absolute;
     z-index: -3;
     
+    animation-name: changeOpacity;
+    animation-duration: 1.8s;
 
     @include mq(mobile-only){
         bottom:75px;
@@ -147,6 +149,11 @@ background-color:$heroBgColor;
 .hero__img--main {
 position: absolute;
 z-index: -2;
+
+
+animation-name: changeOpacity;
+animation-duration: 2.3s;
+
 
     @include mq(mobile-only) {
     bottom:0;
@@ -178,6 +185,11 @@ z-index: -2;
 
     bottom: 0;
     height: auto;
+
+    animation-name: changeOpacity;
+    animation-duration: 2.5s;
+  
+
     @include mq(tablet-only){
         
         right: 35px;
@@ -283,6 +295,9 @@ z-index: -2;
     
     position: absolute;
     z-index: 0;
+
+    animation-name: changeOpacity;
+    animation-duration: 2.3s;
 
     @include mq(tablet-only) {
         bottom:0;
@@ -427,4 +442,18 @@ z-index: -2;
     color:white;
 
     text-align: right;
+}
+
+@keyframes changeOpacity {
+    0% {
+        opacity:0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
