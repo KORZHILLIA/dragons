@@ -18,20 +18,25 @@ height: 100vh;
     }
 
 }
-.modal-toggle__btn {
-    position: fixed;
+.modal-toggle__close {
+    position: absolute;
     right: 28px;
     top: 23px;
-    display: block;
     padding: 0;
     border: none;
     background-color: inherit;
     cursor: pointer;
     @media (min-width:768px) {
-        top: 52px;
+            right: 34px;
+
     }
 }
+// .modal-toggle-close__svg {
+//     position: absolute;
+//     top: 23;
+//     right: 48;
 
+// }
 // .modal-toggle-open__svg {
 //     margin-top: 25px;
 //     @media (min-width:768px) {
