@@ -6,6 +6,14 @@
 .customers__image {
   display: block;
   margin: 0 auto 30px auto;
+
+  @include mq(mobile) {
+    margin: 0 auto 20px auto;
+  }
+
+  @include mq(desktop) {
+    margin: 0 auto 15px auto;
+  }
 }
 
 .customers-wrapper {
@@ -21,11 +29,19 @@
     width: 54px;
     height: 40px;
     top: 28px;
-    left: 140px;
+    left: 60px;
     z-index: -1;
 
     background-image: url('../images/customer-reviews/quotes.png');
     background-repeat: no-repeat;
+
+    @include mq(mobile) {
+      left: 138px;
+    }
+
+    @include mq(desktop) {
+      left: 265px;
+    }
   }
 }
 
@@ -36,8 +52,6 @@
   @include fonts(normal, 500, 12px, 2.58);
   text-align: center;
   margin: 0 auto;
-  // padding-left: 52px;
-  // padding-right: 66px;
 
   background-image: repeating-linear-gradient(
     to bottom,
@@ -48,9 +62,17 @@
   );
 
   @include mq(tablet) {
+    @include fonts(normal, 500, 14px, 2.14);
     max-width: 620px;
-    padding-left: 52px;
-    padding-right: 66px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @include mq(desktop) {
+    @include fonts(normal, 500, 16px, 1.87);
+    max-width: 888px;
+    padding-left: 88px;
+    padding-right: 88px;
   }
 }
 
@@ -58,12 +80,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin-top: 30px;
+
+  @include mq(tablet) {
+    margin-top: 24px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 15px;
+  }
 }
 
 .customers-name {
   font-family: $main-font;
   @include fonts(normal, 500, 14px, 1.85);
-  margin: 52px auto 0 auto;
+  margin: 0 auto;
 
   &::before {
     content: '';
@@ -78,8 +110,7 @@
     background-image: url('../images/customer-reviews/dots.svg');
     background-repeat: no-repeat;
 
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 }
 
@@ -87,6 +118,14 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
+
+  @include mq(tablet) {
+    margin-top: 35px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 35px;
+  }
 }
 
 .customers-slider__item {
