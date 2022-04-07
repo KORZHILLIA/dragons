@@ -1,0 +1,194 @@
+.products{
+    padding-top: 120px;
+    padding-bottom: 98px;
+}
+
+.products-title-second{
+    font-family: $support-font;
+    @include fonts(normal, 400, 18px, 1.16);
+    color: $secondaryTitleColor;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @include mq(tablet){
+        @include fonts(normal, 400, 26px, 1.13);
+    }
+    @include mq(desktop){
+        @include fonts(normal, 400, 30px, 1.13);
+    }
+}
+
+.product-title-main{
+    font-family: $support-font;
+    @include fonts(normal, 400, 34px, 1.14);
+    color: $mainTitleColor;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    @include mq(tablet-only){
+        @include fonts(normal, 400, 48px, 1.14);
+        margin-bottom: 39px;
+    }
+    @include mq(desktop){
+        @include fonts(normal, 400, 58px, 1.13);
+        margin-bottom: 49px;
+    }
+}
+
+
+.products-list{
+    @include mq(tablet){
+        display: flex;
+    }
+
+    @include mq(desktop){
+        justify-content: center
+    }
+}
+
+.products-item{
+    position: relative;
+    margin-top: 17px;
+    width: 100%;
+
+    @include mq(tablet-only){
+        width: 220px;
+        margin-right: 20px;
+        position: relative;
+        margin-top: 17px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    @include mq(desktop){
+        width: 330px;
+        margin-right: 24px;
+    }
+}
+
+
+
+.products-title{
+    font-family: $support-font;
+    @include fonts(normal, 400, 20px, 1.13);
+    color: $whiteTextColor;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 22px;
+
+    @include mq(desktop){
+        @include fonts(normal, 400, 30px, 1.13);
+    } 
+}
+
+.products-title::after{
+    content: '';
+    display: block;
+    background-image:url('../images/products/dots/dots.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 6px;
+    height: 6px;
+}
+
+.products-title::before{
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+}
+
+.products-title__icecream::before{
+    background-image:url('../images/products/img-1/img-1-mobile-1x.png');
+    margin: 0 auto 22px auto;
+
+    @include mq(tablet-only){
+        margin: 0 auto 30px auto;
+    } 
+
+    @include mq(desktop){
+        margin: 0 auto 38px auto;
+    }    
+}
+
+.products-title__coffee::before{
+    background-image:url('../images/products/img-2/img-2-mobile-1x.png');
+    margin: 0 auto 22px auto;
+
+    @include mq(tablet-only){
+        margin: 0 auto 30px auto;
+    } 
+
+    @include mq(desktop){
+        margin: 0 auto 38px auto;
+    }    
+}
+
+
+.products-title__milkshakes::before{
+    background-image:url('../images/products/img-3/img-3-mobile-1x.png');
+    margin: 0 auto 22px auto;
+
+    @include mq(tablet-only){
+        margin: 0 auto 30px auto;
+    } 
+
+    @include mq(desktop){
+        margin: 0 auto 38px auto;
+    }    
+}
+
+.products-text{
+    font-family: $main-font;
+    @include fonts(normal, 700, 14px, 1.5);
+    color: $whiteTextColor;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 200px;
+
+    @include mq(desktop){
+        @include fonts(normal, 700, 16px, 1.5);
+    }
+}
+
+.products-item__thumb{
+    position: relative;
+    z-index: 2;
+}
+
+
+.products-item__wrapper{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color:  #FFB8CA;
+    border-radius: 24px;
+    top: 135px;
+    z-index: 1;
+}
+
+.products-button{
+    border: none;
+    background-color: transparent;
+    
+}
+
+.products-button__wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    @include mq(tablet-only){
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    @include mq(desktop){
+        margin-top: 62px;
+        margin-bottom: 50px;
+    }
+}

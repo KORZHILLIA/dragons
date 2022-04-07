@@ -13,8 +13,18 @@
 .btn--dark {
 background-color: $accentColor;
 color: white;
+
+transition: background-color $timeDelay $cubic, color $timeDelay $cubic;
+    &:hover, &:focus {
+        background-color:$accentBgButton;
+    }
 }
 .btn--light {
     background-color:white ;
     color: $accentColor;
+
+    &:hover,
+    &:focus {
+        color:$accentBgButton;
+    }
 }
