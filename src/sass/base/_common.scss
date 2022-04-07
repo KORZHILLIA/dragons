@@ -35,7 +35,7 @@ body img {
 
 
 
-    @include mq(mobile-only){
+    @include mq(mobile){
     width: 480px;
     }
 
