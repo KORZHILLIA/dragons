@@ -83,14 +83,29 @@
     } 
 }
 
+
 .products-title::after{
-    content: '';
-    display: block;
-    background-image:url('../images/products/dots/dots.png');
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 6px;
+    content: "";
+    width: 26px;
     height: 6px;
+
+    margin-left: -13px;
+    position: relative;
+    display: block;
+
+    left: 50%;
+    right: 50%;
+    background-image: url('../images/products/dots/dots.svg');
+    background-repeat: no-repeat;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    @include mq (desktop) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        }
 }
 
 .products-title::before{
