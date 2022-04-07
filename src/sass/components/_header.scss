@@ -20,6 +20,31 @@
     }
 .header__btn {
     display: none;
+    @include mq(tablet) {
+        display: flex;
+            font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    color: #D41443;
+
+    width: 186px;
+    height: 44px;
+
+    padding-left: 48.64px;
+    padding-right: 48.64px;
+
+
+    background: #FFFFFF;
+    border: transparent;
+    border-radius: 22px;
+    }
 }
 
 .header__nav {
