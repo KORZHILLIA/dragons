@@ -1,0 +1,1 @@
+$('.customers-slider__item').slick();
