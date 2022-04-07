@@ -118,14 +118,11 @@
     }
     
     @media screen and (min-width:1280px) {
-        width: 1280px;
-        padding-left: 114px;
-        padding-right: 114px;
     
         background-image: url('../images/about/img-5/img-5-desk-1x.png');
         background-size: 1282px;
         background-repeat: no-repeat;
-        background-position-y: 150%;
+        background-position: bottom 0% left 50%;
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -137,6 +134,7 @@
 .about__content{
     @media screen and (min-width:768px) {
         display: flex;
+        align-items: center;
     }
 }
 .about__image{
@@ -149,11 +147,9 @@
 
     @media screen and (min-width:768px) and (max-width:1280px) {
         margin-left: 17px;
-        margin-top: 50px;
     }
     @media screen and (min-width:1280px) {
         margin-left: 74px;
-        margin-top: 51px;
     }
 }
 .about__text{
