@@ -41,7 +41,7 @@
     }
 
     @if $mode==round {
-        @return round($number * $n) / $n;
+        @return calc(round($number * $n) / $n);
     }
 
     @else if $mode==ceil {
