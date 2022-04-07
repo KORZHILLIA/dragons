@@ -5,18 +5,39 @@
     padding-top: 6px;
     @media (min-width:768px) {
         padding-top: 37px;
+
+
     }
-    // .container {
-    //     display: flex;
-    //     align-items: center;
-    // }
+    .container {
+        width: 100%;
+    }
     z-index: 999;
 }
 .header__logo {
-        margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     }
+.header__btn {
+    display: none;
+}
 
-
-.header__wrap {
-        display: none;
+.header__nav {
+    display: none;
+    @include mq(desktop) {
+        display: flex;
     }
+}
+.modal-toggle__open {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    // @media (min-width:768px) {
+
+    // }
+}
+
