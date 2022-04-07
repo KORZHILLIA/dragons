@@ -1,4 +1,4 @@
-<section class="hero__section section">
+<section class="hero__section section" id="hero">
   <div class="container hero__container">
     <div>
       <h1 class="hero__title">
@@ -12,13 +12,65 @@
           <a class="link btn hero__btn btn--light" href="#about">How it's made?</a>
         </li>
       </ul>
-      <p class="hero__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <a class="link hero__link" href="#products">
-        <img class="hero__icon" src="./images/arrow/arrow.png" alt="button-products"/>
-      </a>
+      <picture>
+        <source srcset="./images/hero/circle/hero-img-circle-desk-1x.webp 1x, ./images/hero/circle/hero-img-circle-desk-2x.webp 2x"
+          type="image/webp" media="(min-width: 1280px)"/>
+        <source srcset="./images/hero/circle/hero-img-circle-desk-1x.png 1x, ./images/hero/circle/hero-img-circle-desk-2x.png 2x"
+          type="image/png" media="(min-width: 1280px)"/>
+        <source srcset="./images/hero/circle/hero-img-circle-tabl-1x.webp 1x, ./images/hero/circle/hero-img-circle-tabl-2x.webp 2x"
+          type="image/webp" media="(min-width: 768px)"/>
+        <source srcset="./images/hero/circle/hero-img-circle-tabl-1x.png 1x, ./images/hero/circle/hero-img-circle-tabl-2x.png 2x"
+          type="image/png" media="(min-width: 768px)"/>
+        <source srcset="./images/hero/circle/hero-img-circle-mobile-1x.webp 1x, ./images/hero/circle/hero-img-circle-mobile-2x.webp 2x"
+          type="image/webp" media="(min-width: 480px)"/>
+        <source srcset="./images/hero/circle/hero-img-circle-mobile-1x.png 1x, ./images/hero/circle/hero-img-circle-mobile-2x.png 2x"
+          type="image/png" media="(min-width: 480px)"/>
+        <img class="hero__img--circle" src="./images/hero/circle/hero-img-circle-mobile-1x.png" alt="rose-circle" loading="lazy">
+      </picture>
+     <picture>
+       <source srcset="./images/hero/img-1/hero-img-1-desk-1x.webp 1x, ./images/hero/img-1/hero-img-1-desk-2x.webp 2x" type="image/webp" media="(min-width: 1280px)"/>
+      <source srcset="./images/hero/img-1/hero-img-1-desk-1x.png 1x, ./images/hero/img-1/hero-img-1-desk-2x.png 2x"
+        type="image/png" media="(min-width: 1280px)"/>
+      <source srcset="./images/hero/img-1/hero-img-1-tabl-1x.webp 1x, ./images/hero/img-1/hero-img-1-tabl-2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+      <source srcset="./images/hero/img-1/hero-img-1-tabl-1x.png 1x, ./images/hero/img-1/hero-img-1-tabl-2x.png 2x"
+        type="image/png" media="(min-width: 768px)"/>
+      <source srcset="./images/hero/img-1/hero-img-1-mobile-1x.webp 1x, ./images/hero/img-1/hero-img-1-mobile-2x.webp 2x"
+        type="image/webp" media="(min-width: 480px)"/>
+      <source srcset="./images/hero/img-1/hero-img-1-mobile-1x.png 1x, ./images/hero/img-1/hero-img-1-mobile-2x.png 2x"
+        type="image/png" media="(min-width: 480px)"/>
+      <img class="hero__img--main" src="./images/hero/img-1/hero-img-1-mobile-1x.png" alt="ice-cream" loading="lazy">
+     </picture>
+     <div class="hero__box--button">
+       <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+    <picture>
+      <source srcset="./images/hero/img-2/hero-img-2-desk-1x.webp 1x, ./images/hero/img-2/hero-img-2-desk-2x.webp 2x"
+        type="image/webp" media="(min-width: 1280px)" />
+      <source srcset="./images/hero/img-2/hero-img-2-desk-1x.png 1x, ./images/hero/img-2/hero-img-2-desk-2x.png 2x"
+        type="image/png" media="(min-width: 1280px)" />
+      <source srcset="./images/hero/img-2/hero-img-2-tabl-1x.webp 1x, ./images/hero/img-2/hero-img-2-tabl-2x.webp 2x"
+        type="image/webp" media="(min-width: 768px)" />
+      <source srcset="./images/hero/img-2/hero-img-2-tabl-1x.png 1x, ./images/hero/img-2/hero-img-2-tabl-2x.png 2x"
+        type="image/png" media="(min-width: 768px)" />
+      <img class="hero__img--second" src="./images/hero/img-2/hero-img-2-tabl-1x.png" alt="milk" loading="lazy">
+    </picture>
+    <picture>
+      <source srcset="./images/hero/img-2/hero-img-2-desk-1x.webp 1x, ./images/hero/img-2/hero-img-2-desk-2x.webp 2x"
+        type="image/webp" media="(min-width: 1280px)" />
+      <source srcset="./images/hero/img-2/hero-img-2-desk-1x.png 1x, ./images/hero/img-2/hero-img-2-desk-2x.png 2x"
+        type="image/png" media="(min-width: 1280px)" />
+      <source srcset="./images/hero/img-2/hero-img-2-tabl-1x.webp 1x, ./images/hero/img-2/hero-img-2-tabl-2x.webp 2x"
+        type="image/webp" media="(min-width: 768px)" />
+      <source srcset="./images/hero/img-2/hero-img-2-tabl-1x.png 1x, ./images/hero/img-2/hero-img-2-tabl-2x.png 2x"
+        type="image/png" media="(min-width: 768px)" />
+      <img class="hero__img--second" src="./images/hero/img-2/hero-img-2-tabl-1x.png" alt="milk" loading="lazy">
+    </picture>
+    <a class="link hero__link" href="#products">
+      <img class="hero__icon" src="./images/arrow/arrow.png" alt="button-products" />
+    </a>
+  </div>
     </div>
     <div class="hero__box">
       <ul class="box__list list">
@@ -31,6 +83,19 @@
           <p class="box__text--small">food trucks</p>
         </li>
       </ul>
+      <div>
+        <picture>
+          <source srcset="./images/hero/img-3/hero-img-3-desk-1x.webp 1x, ./images/hero/img-3/hero-img-3-desk-2x.webp 2x"
+            type="image/webp" media="(min-width: 1280px)" />
+          <source srcset="./images/hero/img-3/hero-img-3-desk-1x.png 1x, ./images/hero/img-3/hero-img-3-desk-2x.png 2x"
+            type="image/png" media="(min-width: 1280px)" />
+          <source srcset="./images/hero/img-3/hero-img-3-tabl-1x.webp 1x, ./images/hero/img-3/hero-img-3-tabl-2x.webp 2x"
+            type="image/webp" media="(min-width: 768px)" />
+          <source srcset="./images/hero/img-3/hero-img-3-tabl-1x.png 1x, ./images/hero/img-3/hero-img-3-tabl-2x.png 2x"
+            type="image/png" media="(min-width: 768px)" />
+          <img class="hero__img--third" src="./images/hero/img-3/hero-img-3-tabl-1x.png" alt="girl with ice-cream" loading="lazy">
+        </picture>
+      </div>
     </div>
   </div>
 </section>
