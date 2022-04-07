@@ -19,7 +19,7 @@ height: 100vh;
 
 }
 .modal-toggle__btn {
-    position: absolute;
+    position: fixed;
     right: 28px;
     top: 23px;
     display: block;
@@ -28,17 +28,62 @@ height: 100vh;
     background-color: inherit;
     cursor: pointer;
     @media (min-width:768px) {
-        top: 52px;
+        top: 23px;
     }
 }
 .burger__nav {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
     display: flex;
-    flex-direction: column;
-    margin: 24px;
+    align-items: center;
+    
+    color: #FFFFFF;
+
     border-bottom: 1px solid #E18298;
 }
 .burger__item {
+    display: flex;
+    align-items: center;
     width: 250px;
     height: 42px;
     border-top: 1px solid #E18298;
+}
+.burger-link {
+    margin: 24px;
+    text-align: center;
+}
+
+.burger-btn { 
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    color: #D41443;
+
+    width: 186px;
+    height: 44px;
+
+    margin: 60px 20px 19px 21px;
+    padding-left: 48.64px;
+    padding-right: 48.64px;
+
+
+    background: #FFFFFF;
+    border: transparent;
+    border-radius: 22px;
+
+    @include mq(tablet) {
+        margin: 60px 34px 19px 34px;
+        padding-left: 43.28px;
+        padding-right: 43.28px;
+    }
 }
