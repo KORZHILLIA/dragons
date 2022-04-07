@@ -156,19 +156,15 @@ background-color:$heroBgColor;
 .hero__link {
 
     @include mq(tablet) {
-        display: block;
+        display: flex;
         
         margin-top: 7px;
         margin-left: 118px;
         
-        padding: 6px;
         
         width: 18px;
         height: 18px;
-        
-        border-radius: 50%;
-        
-        background-color: white;
+    
     };
 
     @include mq(desktop) {
@@ -181,11 +177,20 @@ background-color:$heroBgColor;
     
 }
 .hero__icon {
-    @include flex();
+    display: none;
+    @include mq(tablet) {
+        @include flex();
+    }  
 }
 
 .hero__box {
     display: none;
+
+    @include mq(tablet-only) {
+        display: block;
+
+        // margin-right: 34px;
+    }
 
     @include mq(desktop) {
         display: block;
@@ -197,7 +202,15 @@ background-color:$heroBgColor;
 .box__item {
 
     &:not(:last-child) {
+
+        @include mq(tablet-only){
+            margin-bottom: 13px;
+        }
+
+        @include mq(desktop) {
         margin-bottom: 15px;
+        }
+        
     }
 }
 .box__text {
@@ -205,7 +218,7 @@ background-color:$heroBgColor;
     position: relative;
     z-index: 1;
 
-    @include fonts(normal, 400, 46px, 53px);
+    
 
     font-family: $support-font;
     
@@ -214,18 +227,38 @@ background-color:$heroBgColor;
     color:$accentColor;
     text-align: right;
 
+    @include mq(tablet-only) {
+        @include fonts(normal, 400, 28px, 32px);
+    }
+
+    @include mq (desktop) {
+        @include fonts(normal, 400, 46px, 53px);
+    }
+
     &::after {
         content: "";
 
         position: absolute;
-        top: -10px;
-        right: -15px;
+        top: -5px;
+        right: -7px;
+
+        @include mq(desktop) {
+            top: -10px;
+            right: -15px;
+        }
+        
         z-index: -1;
 
         display: flex;
 
-        width: 30px;
-        height: 30px;
+        width: 16px;
+        height: 16px;
+
+        @include mq(desktop) {
+            width: 30px;
+            height: 30px;
+        }
+        
 
         border-radius: 50%;
 
@@ -235,7 +268,14 @@ background-color:$heroBgColor;
 }
 
 .box__text--small {
-    @include fonts (normal, 400, 14px, 18px);
+
+    @include mq(tablet-only){
+        @include fonts (normal, 400, 8px, 10px);
+    }
+    @include mq(desktop) {
+        @include fonts (normal, 400, 14px, 18px);
+    }
+
     font-family: $main-font;
 
     color:white;
