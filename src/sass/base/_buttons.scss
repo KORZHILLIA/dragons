@@ -9,6 +9,18 @@
     
     font-family: $main-font;
     @include fonts (normal, 400, 8px, 10px);
+
+    @include mq(tablet) {
+        padding: 11px 14px;
+    }
+
+    @include mq(desktop) {
+    min-width: 104px;
+    height: 40px;
+        
+        @include fonts (normal, 400, 14px, 18px);
+    
+    }
 }
 .btn--dark {
 background-color: $accentColor;
