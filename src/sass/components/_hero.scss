@@ -126,15 +126,16 @@ animation-duration: 2.3s;
 .hero__thumb {
     @include mq(mobile-only) {
         min-width: 218px;
-        min-height: 150px;
     }
     @include mq(tablet-only) {
         min-width: 162px;
-        min-height: 125px;
 
     }
    @include mq(desktop) {
        margin-left: 70px;
+
+        min-width: 277px;
+    
    }
 }
 .hero__title {
