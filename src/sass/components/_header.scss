@@ -8,7 +8,7 @@
     @media (min-width:768px) {
             padding: 20px 0;
             &.fixed {
-                background-color: #ffb8ca;
+                background-color: $headerBgMainColor;
             }
     }
     @media (min-width:1280px) {
@@ -96,3 +96,18 @@
         }
     } 
 }   
+
+
+.overlay-block {
+    position: fixed;
+    z-index: 9998;
+    background-color: rgba(0,0,0,.75);
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    &.open {
+        display: block;
+    }
+}

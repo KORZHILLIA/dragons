@@ -12,4 +12,19 @@ jQuery(document).ready(function ($) {
       $('.header').removeClass('fixed');
     }
   });
+
+  $(document).on('click', '.header__burger', function () {
+    $('.overlay-block').addClass('open');
+    $('body').css('overflow', 'hidden');
+  });
+  $('.modal-toggle__close').on('click', function () {
+    $('.overlay-block').removeClass('open');
+  });
+
+  $('.overlay-block').on('click', function () {
+    $(this).removeClass('open');
+    $('.js-menu-container').removeClass('is-open');
+    $('.js-open-menu').attr('aria-expanded', false);
+    $('body').css('overflow', 'visible');
+  });
 });
