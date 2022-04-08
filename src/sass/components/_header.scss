@@ -34,16 +34,16 @@
         align-items: center;
         text-align: center;
     
-        color: #D41443;
+        color: $accentColor;
 
         width: 160px;
         height: 44px;
 
-        padding-left: 37.23px;
-        padding-right: 37.23px;
+        padding-left: 37px;
+        padding-right: 37px;
 
 
-        background: #FFFFFF;
+        background: $whiteTextColor;
         border: transparent;
         border-radius: 22px;
     }
@@ -76,18 +76,12 @@
     margin-left: 35px;
 }
 .header__nav-item {
-    @mixin fonts($fs: normal, $fw: 700, $fsz: 16px, $lh: 21px, $ls: 0.04em) {
-        font-style: $fs;
-        font-weight: $fw;
-        font-size: $fsz;
-        line-height: setLineHeight($lh, $fsz);
-        letter-spacing: $ls;
-    }
+    @include fonts(normal,700,16px,21px,0.04em);
     color: $whiteTextColor;
     .link {
         &:hover,
         &:focus {
             color: $accentColor;
         }
-    }
-}
+    } 
+}   
