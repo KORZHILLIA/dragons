@@ -6,7 +6,7 @@ width: 250px;
 height: 100vh;
 
 
-    background-color: #E17992;
+    background-color: $modalBgColor;
 
     z-index: 9999;
 
@@ -54,14 +54,14 @@ height: 100vh;
     
     color: $whiteTextColor;
 
-    border-bottom: 1px solid #E18298;
+    border-bottom: 1px solid $modalBgMainColor;
 }
 .burger__item {
     display: flex;
     align-items: center;
     width: 250px;
     height: 42px;
-    border-top: 1px solid #E18298;
+    border-top: 1px solid $modalBgMainColor;
 }
 .burger-link {
     margin: 24px;
