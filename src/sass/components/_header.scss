@@ -8,7 +8,7 @@
     @media (min-width:768px) {
             padding: 20px 0;
             &.fixed {
-                background-color: #ffb8ca;
+                background-color: $headerBgMainColor;
             }
     }
     @media (min-width:1280px) {
