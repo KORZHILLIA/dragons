@@ -6,7 +6,7 @@ width: 250px;
 height: 100vh;
 
 
-    background-color: #E17992;
+    background-color: $modalBgColor;
 
     z-index: 9999;
 
@@ -46,42 +46,50 @@ height: 100vh;
 
 // }
 .burger__nav {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    font-family: $main-font;
+
+    @include fonts (normal, 700, 14px, 18px, 0.04em);
     display: flex;
     align-items: center;
     
-    color: #FFFFFF;
+    color: $whiteTextColor;
 
-    border-bottom: 1px solid #E18298;
+    border-bottom: 1px solid $modalBgMainColor;
 }
 .burger__item {
     display: flex;
     align-items: center;
     width: 250px;
     height: 42px;
-    border-top: 1px solid #E18298;
+    border-top: 1px solid $modalBgMainColor;
 }
 .burger-link {
     margin: 24px;
     text-align: center;
+    transition: $cubic $timeDelay;
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+    
 }
 
 .burger-btn { 
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+    font-family: $main-font;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    @include fonts(normal,700,16px,21px,0.04em);
+
+    transition: $cubic $timeDelay;
+        
+    &:hover,
+    &:focus {
+        background-color: $secondaryBgButton;
+        }
     
-    color: #D41443;
+    color: $accentBgSvg;
 
     width: 186px;
     height: 44px;
@@ -91,7 +99,7 @@ height: 100vh;
     padding-right: 48.64px;
 
 
-    background: #FFFFFF;
+    background: $whiteTextColor;
     border: transparent;
     border-radius: 22px;
 
