@@ -5,6 +5,10 @@
   @include mq(tablet) {
     padding-bottom: 112px;
   }
+
+  @include mq(tablet) {
+    padding-bottom: 120px;
+  }
 }
 
 .products-title-second {
@@ -27,15 +31,15 @@
   @include fonts(normal, 400, 34px, 1.14);
   color: $mainTitleColor;
   text-align: center;
-  // margin-bottom: 30px;
+  margin-bottom: 14px;
 
   @include mq(tablet-only) {
     @include fonts(normal, 400, 48px, 1.14);
-    // margin-bottom: 39px;
+    margin-bottom: 150px;
   }
   @include mq(desktop) {
     @include fonts(normal, 400, 58px, 1.13);
-    // margin-bottom: 49px;
+    margin-bottom: 260px;
   }
 }
 
@@ -53,15 +57,17 @@
   position: relative;
   margin-top: 130px;
   width: 100%;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-color: #ffb8ca;
+  background-color: $primaryBgProducts;
   border-radius: 24px;
-  top: 135px;
 
   padding: 161px 40px 40px 40px;
 
   @include mq(tablet-only) {
-    width: 220px;
+    max-width: 220px;
     margin-right: 20px;
     position: relative;
     margin-top: 17px;
@@ -73,8 +79,9 @@
   }
 
   @include mq(desktop) {
-    width: 330px;
+    max-width: 330px;
     margin-right: 24px;
+    margin-top: 0;
   }
 }
 
@@ -88,8 +95,15 @@
   color: $whiteTextColor;
   margin-bottom: 30px;
 
+  @include mq(tablet-only) {
+    margin-bottom: 66px;
+    margin-top: 30px;
+  }
+
   @include mq(desktop) {
     @include fonts(normal, 400, 30px, 1.13);
+    margin-bottom: 70px;
+    margin-top: 38px;
   }
 }
 
@@ -104,10 +118,6 @@
   background-repeat: no-repeat;
 
   margin-top: 30px;
-
-  // @include mq(desktop) {
-  //   margin-top: 32px;
-  // }
 }
 
 .products-item::before {
@@ -124,13 +134,17 @@
   left: 20px;
   background-image: url('../images/products/img-1/img-1-mobile-1x.png');
 
-  @include mq(mobile) {
-    left: 90px;
-  }
-
   @include mq(tablet-only) {
     left: -10px;
   }
+
+  @include mq(desktop) {
+    left: 53px;
+  }
+}
+
+.products-title__coffee {
+  background-color: $secondBgProducts;
 }
 
 .products-title__coffee::before {
@@ -139,13 +153,17 @@
   left: 20px;
   background-image: url('../images/products/img-2/img-2-mobile-1x.png');
 
-  @include mq(mobile) {
-    left: 90px;
-  }
-
   @include mq(tablet-only) {
     left: -10px;
   }
+
+  @include mq(desktop) {
+    left: 53px;
+  }
+}
+
+.products-title__milkshakes {
+  background-color: $thirdBgProducts;
 }
 
 .products-title__milkshakes::before {
@@ -154,12 +172,12 @@
   left: 20px;
   background-image: url('../images/products/img-3/img-3-mobile-1x.png');
 
-  @include mq(mobile) {
-    left: 90px;
-  }
-
   @include mq(tablet-only) {
     left: -10px;
+  }
+
+  @include mq(desktop) {
+    left: 53px;
   }
 }
 
@@ -184,24 +202,21 @@
   }
 }
 
-.products-item__thumb {
-  position: relative;
-  z-index: 2;
-}
-
-.products-item__wrapper {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  background-color: #ffb8ca;
-  border-radius: 24px;
-  top: 135px;
-  z-index: 1;
-}
-
 .products-button {
   display: block;
   margin: 0 auto;
   border: none;
   background-color: transparent;
+
+  @include mq(mobile) {
+    margin-top: 30px;
+  }
+
+  @include mq(tablet-only) {
+    margin-top: 40px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 62px;
+  }
 }

@@ -94,6 +94,16 @@
 .customers-name {
   @include fonts(normal, 500, 14px, 1.85);
   text-align: center;
+  margin-top: 52px;
+
+  @include mq(tablet) {
+    margin-top: 42px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 34px;
+  }
+
   &::before {
     content: '';
     height: 6px;
