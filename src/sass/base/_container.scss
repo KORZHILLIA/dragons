@@ -8,18 +8,18 @@
   padding-right: 20px;
 
   @include mq(mobile) {
-    width: 480px;
+    width: 464px;
   }
 
   @include mq(tablet-only) {
-    width: 768px;
+    width: 752px;
 
     padding-left: 36px;
     padding-right: 36px;
   }
 
   @include mq(desktop) {
-    width: 1280px;
+    width: 1264px;
 
     padding-left: 15px;
     padding-right: 15px;
