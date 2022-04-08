@@ -4,10 +4,8 @@
     border-radius: 20px;
 
     min-width: 63px;
-    height: 24px;
 
-    
-    font-family: $main-font;
+
     @include fonts (normal, 400, 8px, 10px);
 
     @include mq(tablet) {
@@ -15,8 +13,7 @@
     }
 
     @include mq(desktop) {
-    min-width: 104px;
-    height: 40px;
+        min-width: 104px;
         
         @include fonts (normal, 400, 14px, 18px);
     
@@ -37,6 +34,7 @@ transition: background-color $timeDelay $cubic, color $timeDelay $cubic;
 
     &:hover,
     &:focus {
+        background-color: $secondaryBgButton;
         color:$accentBgButton;
     }
 }
