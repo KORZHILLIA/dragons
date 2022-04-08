@@ -18,36 +18,30 @@
 
 .customers-wrapper {
   z-index: 1;
+  padding-left: 50px;
+  padding-right: 50px;
   position: relative;
   background-color: #fafafa;
   padding-top: 43px;
   padding-bottom: 26px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 54px;
-    height: 40px;
-    top: 28px;
-    left: 60px;
-    z-index: -1;
+  @include mq(tablet) {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 35px;
+  }
 
-    background-image: url('../images/customer-reviews/quotes.png');
-    background-repeat: no-repeat;
-
-    @include mq(mobile) {
-      left: 138px;
-    }
-
-    @include mq(desktop) {
-      left: 265px;
-    }
+  @include mq(desktop) {
+    max-width: 926px;
+    margin: 0 auto;
   }
 }
 
 .customers-text {
   width: 100%;
-  max-width: 157px;
+  padding-left: 10px;
+  padding-right: 10px;
   @include fonts(normal, 500, 12px, 2.58);
   text-align: center;
   margin: 0 auto;
@@ -60,18 +54,39 @@
     #e1e1e1 30px
   );
 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    top: 28px;
+    left: 58pxpx;
+    z-index: -1;
+
+    background-image: url('../images/customer-reviews/quotes.png');
+    background-repeat: no-repeat;
+
+    @include mq(mobile) {
+      left: 52px;
+    }
+
+    @include mq(desktop) {
+      left: 72px;
+    }
+  }
+
   @include mq(tablet) {
     @include fonts(normal, 500, 14px, 2.14);
     max-width: 620px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 44px;
   }
 
   @include mq(desktop) {
     @include fonts(normal, 500, 16px, 1.87);
     max-width: 888px;
-    padding-left: 88px;
-    padding-right: 88px;
+    padding-left: 28px;
+    padding-right: 35px;
   }
 }
 
