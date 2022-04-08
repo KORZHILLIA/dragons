@@ -1,35 +1,34 @@
 // Background-Color
-$heroBgColor: #FFB8CA;
-$primaryBgColor: #E5E5E5;
-$secondaryBgColor:#FFF5F6;
-$modalBgColor:#E17992;
-$modalBgMainColor:#E18298;
-$headerBgMainColor:#e1829836;
-
+$heroBgColor: #ffb8ca;
+$primaryBgColor: #e5e5e5;
+$secondaryBgColor: #fff5f6;
+$modalBgColor: #e17992;
+$modalBgMainColor: #e18298;
+$headerBgMainColor: #ffb8caca;
 
 // Background-Color-Button
-$primaryBgButton: #FFFFFF;
-$secondaryBgButton: #ECEBEB;
-$accentBgButton: #C7133E;
+$primaryBgButton: #ffffff;
+$secondaryBgButton: #ecebeb;
+$accentBgButton: #c7133e;
 
 // Background-Color-Products
-$primaryBgProducts: #FFB8CA;
-$secondBgProducts: #F0D1A5;
-$thirdBgProducts: #C2E297;
+$primaryBgProducts: #ffb8ca;
+$secondBgProducts: #f0d1a5;
+$thirdBgProducts: #c2e297;
 
 // Background-Svg
-$accentBgSvg:#D31342;
-$svgBg: #FEA5BB;
+$accentBgSvg: #d31342;
+$svgBg: #fea5bb;
 
 // Color
-$accentColor: #D41443;
+$accentColor: #d41443;
 
-$mainTitleColor: #D41443;
-$secondaryTitleColor: #FFA5BA;
+$mainTitleColor: #d41443;
+$secondaryTitleColor: #ffa5ba;
 
-$whiteTextColor: #FFFFFF;
+$whiteTextColor: #ffffff;
 $blackTextColor: #000000;
-$mainTextColor: #907E82;
+$mainTextColor: #907e82;
 
 $main-font: DM Sans, sans-serif;
 $support-font: Titan One, sans-serif;
@@ -38,5 +37,5 @@ $support-font: Titan One, sans-serif;
 $timeDelay: 250ms;
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
