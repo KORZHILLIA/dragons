@@ -3,11 +3,11 @@
   padding-top: 43px;
   padding-bottom: 113px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(to bottom, $whiteTextColor 18%, #fff5f6 18%, #fff5f6 100%);
     padding-bottom: 165px;
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(to bottom, $whiteTextColor 18%, #fff5f6 18%, #fff5f6 100%);
     padding-bottom: 165px;
   }
@@ -18,12 +18,12 @@
   row-gap: 20px;
 
   margin-bottom: 54px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     column-gap: 20px;
     margin-bottom: 81px;
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     column-gap: 31px;
     margin-bottom: 86px;
     justify-content: center;
@@ -45,10 +45,10 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 50px 32px 50px 31px;
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     max-width: 330px;
     padding: 51px 44px 62px 43px;
   }
@@ -104,11 +104,11 @@
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -146,17 +146,17 @@
 }
 
 .btn-list {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     column-gap: 15px;
   }
 }
 .btn-list__item:not(:first-child) {
-    margin-top: 10px;
-    @media screen and (min-width:768px) {
-      margin-top: 0px;
-    }
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 .btn-list__item {
   text-align: center;
