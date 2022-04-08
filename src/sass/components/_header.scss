@@ -20,6 +20,11 @@
     }
 .header__btn {
     display: none;
+    transition: $cubic $timeDelay;
+    &:hover,
+    &:focus {
+        background-color: $secondaryBgButton;
+    }
     @include mq(tablet) {
         display: flex;
 
@@ -79,6 +84,7 @@
     @include fonts(normal,700,16px,21px,0.04em);
     color: $whiteTextColor;
     .link {
+        transition: $cubic $timeDelay;
         &:hover,
         &:focus {
             color: $accentColor;
