@@ -1,91 +1,96 @@
 .hero__section {
-position: relative;
-z-index:-4;
+    position: relative;
+    z-index: -10;
 
-padding-top: 193px;
-padding-bottom: 160px;  
+    padding-top: 193px;
+    padding-bottom: 160px;
 
-background-color:$heroBgColor;
+    background-color: $heroBgColor;
 
     @include mq(mobile-only) {
-    min-height: 502px;
-        }
-    
+        min-height: 502px;
+    }
+
     @include mq(tablet-only) {
 
-    padding-top: 102px;
-    padding-bottom: 34px;
+        padding-top: 102px;
+        padding-bottom: 34px;
 
-    min-height: 400px;
+        min-height: 400px;
     }
-    
+
     @include mq(desktop) {
-    
-    padding-top: 171px;
-    padding-bottom: 35px;
-    
-    min-height:665px;
+
+        padding-top: 171px;
+        padding-bottom: 35px;
+
+        min-height: 665px;
     }
+
     background-repeat:no-repeat;
 }
-.hero__img--circle{
+
+.hero__img--circle {
     position: absolute;
-    z-index: -3;
-    
+    z-index: -5;
+
     animation-name: changeOpacity;
     animation-duration: 1.8s;
 
-    @include mq(mobile-only){
-        bottom:75px;
-        right:0;
-        
-        width:284px;
+    @include mq(mobile-only) {
+        bottom: 75px;
+        right: 0;
+
+        width: 284px;
         height: 344px;
     }
-    
-    @include mq(tablet-only){
-        bottom:46px;
-        right:137px;
-        
-        width:324px;
+
+    @include mq(tablet-only) {
+        bottom: 46px;
+        right: 137px;
+
+        width: 324px;
         height: 322px;
     }
+
     @include mq(desktop) {
         bottom: 75px;
         right: 267px;
-    
+
         width: 538px;
         height: 538px;
     }
 }
+
 .hero__img--main {
-position: absolute;
-z-index: -2;
+    position: absolute;
+    z-index: -3;
 
 
-animation-name: changeOpacity;
-animation-duration: 2.3s;
+    animation-name: changeOpacity;
+    animation-duration: 2.3s;
 
 
     @include mq(mobile-only) {
-    bottom:0;
-    right:35px;
+        bottom: 0;
+        right: 35px;
 
-    width: 171px;
-    height: 410px;
+        width: 171px;
+        height: 410px;
     }
 
     @include mq(tablet-only) {
         bottom: 0;
         right: 247px;
-    
+
         width: 143px;
         height: 336px;
     }
+
     @include mq(desktop) {
         bottom: 0;
         right: 450px;
-    
+
         width: 236px;
         height: 557px;
     }
@@ -93,113 +98,130 @@ animation-duration: 2.3s;
 
 .hero__img--third {
     position: absolute;
-    z-index: 0;
+    z-index: -2;
 
     bottom: 0;
     height: auto;
 
     animation-name: changeOpacity;
     animation-duration: 2.5s;
-  
 
-    @include mq(tablet-only){
-        
+
+    @include mq(tablet-only) {
+
         right: 35px;
-        
+
         width: 168px;
-        
+
     }
-    @include mq(desktop){
-        
+
+    @include mq(desktop) {
+
         right: 109px;
 
         width: 293px;
-        
+
     }
-    
+
 
 }
+
 .hero__container {
-    display: flex;
-    justify-content: space-between;
+    @include mq(tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ;
 }
+
 .hero__thumb {
     @include mq(mobile-only) {
         min-width: 218px;
     }
+
     @include mq(tablet-only) {
         min-width: 162px;
 
     }
-   @include mq(desktop) {
-       margin-left: 70px;
+
+    @include mq(desktop) {
+        margin-left: 70px;
 
         min-width: 277px;
-    
-   }
+
+    }
 }
+
 .hero__title {
     width: 218px;
     margin-bottom: 19px;
 
     font-family: $support-font;
-    @include fonts(normal, 400, 26px, 30px); 
-    
+    @include fonts(normal, 400, 26px, 30px);
+
     color: white;
 
     text-transform: uppercase;
-    @include mq (tablet-only) {
-        width: 162px; 
 
-        @include fonts (normal, 400, 22px, 25px); 
+    @include mq (tablet-only) {
+        width: 162px;
+
+        @include fonts (normal, 400, 22px, 25px);
 
         margin-bottom: 20px;
     }
+
     @include mq (desktop) {
         width: 277px;
-        @include fonts (normal, 400, 38px, 44px);   
+        @include fonts (normal, 400, 38px, 44px);
 
         margin-bottom: 25px;
     }
 }
-.hero__title--dark {
-    color:$accentColor;
 
-    @include mq(mobile-only){
+.hero__title--dark {
+    color: $accentColor;
+
+    @include mq(mobile-only) {
         @include fonts(normal, 400, 48px, 46px);
     }
 
-    @include mq(tablet-only){
+    @include mq(tablet-only) {
         @include fonts (normal, 400, 34px, 31px);
     }
+
     @include mq (desktop) {
         @include fonts (normal, 400, 50px, 52px);
     }
 }
+
 .hero__list {
     display: flex;
 }
+
 .hero__item:not(:last-child) {
     margin-right: 8px;
 
-    @include mq(desktop){
+    @include mq(desktop) {
         margin-right: 15px;
     }
 }
+
 .hero__btn {
     @include flex();
 }
 
-
 .hero__box--left {
     position: relative;
 
-    @include mq(tablet){
+    @include mq(tablet) {
         margin-top: 66px;
         margin-left: 118px;
 
         min-width: 114px;
     }
+
     @include mq(desktop) {
         margin-top: 112px;
         margin-left: 216px;
@@ -207,10 +229,11 @@ animation-duration: 2.3s;
         min-width: 200px;
     }
 }
+
 .hero__text {
     display: none;
 
-    @include mq(tablet){
+    @include mq(tablet) {
         display: block;
 
         width: 114px;
@@ -221,6 +244,7 @@ animation-duration: 2.3s;
         font-family: $main-font;
 
     }
+
     @include mq(desktop) {
         width: 200px;
 
@@ -230,27 +254,28 @@ animation-duration: 2.3s;
 }
 
 .hero__img--second {
-    @include mq(mobile-only){
-    display: none;
+    @include mq(mobile-only) {
+        display: none;
     }
-    
+
     position: absolute;
-    z-index: 0;
+    z-index: -2;
 
     animation-name: changeOpacity;
     animation-duration: 2.3s;
 
     @include mq(tablet-only) {
-        bottom:0;
+        bottom: 0;
         left: -100%;
 
         width: 124px;
         height: 126px;
     }
+
     @include mq(desktop) {
         bottom: 0;
         left: -100%;
-    
+
         width: 188px;
         height: 191px;
     }
@@ -260,75 +285,80 @@ animation-duration: 2.3s;
 
     @include mq(tablet) {
         display: flex;
-        
-        margin-top: 7px;
-        
-        
-        
-        width: 18px;
-        height: 18px;
-    
-    };
+
+        @include mq(tablet-only) {
+            margin-top: 7px;
+
+            width: 18px;
+            height: 18px;
+        }
+
+    }
+
+    ;
 
     @include mq(desktop) {
         margin-top: 20px;
-        
 
         width: 26px;
         height: 26px;
     }
-    
+
 }
+
 .hero__icon {
     display: none;
+
     @include mq(tablet) {
         @include flex();
-    }  
+    }
 }
 
 .hero__box {
- 
     display: none;
 
     @include mq(tablet-only) {
         display: block;
-
-        // margin-right: 34px;
     }
+
+    ;
 
     @include mq(desktop) {
         display: block;
 
         margin-right: 97px;
     }
+
+    ;
 }
 
 .box__item {
 
     &:not(:last-child) {
 
-        @include mq(tablet-only){
+        @include mq(tablet-only) {
             margin-bottom: 13px;
         }
 
         @include mq(desktop) {
-        margin-bottom: 15px;
+            margin-bottom: 15px;
         }
-        
+
     }
 }
+
 .box__text {
     display: block;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 
-    
+
 
     font-family: $support-font;
-    
+
     text-transform: uppercase;
-    
-    color:$accentColor;
+
+    color: $accentColor;
     text-align: right;
 
     @include mq(tablet-only) {
@@ -350,7 +380,7 @@ animation-duration: 2.3s;
             top: -10px;
             right: -15px;
         }
-        
+
         z-index: -1;
 
         display: flex;
@@ -362,7 +392,7 @@ animation-duration: 2.3s;
             width: 30px;
             height: 30px;
         }
-        
+
 
         border-radius: 50%;
 
@@ -373,9 +403,10 @@ animation-duration: 2.3s;
 
 .box__text--small {
 
-    @include mq(tablet-only){
+    @include mq(tablet-only) {
         @include fonts (normal, 400, 8px, 10px);
     }
+
     @include mq(desktop) {
         @include fonts (normal, 400, 14px, 18px);
     }
@@ -389,7 +420,7 @@ animation-duration: 2.3s;
 
 @keyframes changeOpacity {
     0% {
-        opacity:0;
+        opacity: 0;
     }
 
     50% {

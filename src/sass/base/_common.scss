@@ -17,7 +17,7 @@ body button {
     padding: 0;
 }
 
-body img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -34,19 +34,19 @@ body img {
 
 
 
-    @include mq(mobile){
-    width: 480px;
+    @include mq(mobile) {
+        width: 480px;
     }
 
     @include mq(tablet-only) {
-    width:768px;
+        width: 768px;
 
-    padding-left: 36px;
-    padding-right: 36px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
 
     @include mq(desktop) {
-        width:1280px;
+        width: 1280px;
 
         padding-left: 15px;
         padding-right: 15px;
@@ -59,7 +59,10 @@ ul {
     margin: 0;
 }
 
-.link, address {
+.link,
+address {
     text-decoration: none;
     color: inherit;
+
+    cursor: pointer;
 }
