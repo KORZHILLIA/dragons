@@ -5,6 +5,10 @@
   @include mq(tablet) {
     padding-bottom: 112px;
   }
+
+  @include mq(tablet) {
+    padding-bottom: 120px;
+  }
 }
 
 .products-title-second {
