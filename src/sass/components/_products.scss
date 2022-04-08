@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .products {
   padding-top: 120px;
   padding-bottom: 98px;
@@ -220,3 +221,66 @@
     margin-top: 62px;
   }
 }
+=======
+<section class="products" id="products">
+  <div class="container">
+    <p class="products-title-second">100% natural</p>
+    <h2 class="product-title-main">products</h2>
+
+    <ul class="products-list">
+      <li class="products-item products-titleicecream">
+        <h3 class="products-title">ice cream</h3>
+        <p class="products-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button class="products-button">
+          <img
+            width="40"
+            height="40"
+            src="./images/arrow/arrow.png"
+            alt=""
+            class="button-imgproducts"
+          />
+        </button>
+      </li>
+
+      <li class="products-item products-titlecoffee">
+        <h3 class="products-title">ice coffee</h3>
+
+        <p class="products-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button class="products-button">
+          <img
+            width="40"
+            height="40"
+            src="./images/arrow/arrow.png"
+            alt=""
+            class="button-imgproducts"
+          />
+        </button>
+      </li>
+
+      <li class="products-item products-titlemilkshakes">
+        <h3 class="products-title">milkshakes</h3>
+
+        <p class="products-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button class="products-button">
+          <img
+            width="40"
+            height="40"
+            src="./images/arrow/arrow.png"
+            alt=""
+            class="button-imgproducts"
+          />
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+>>>>>>> Stashed changes
