@@ -192,8 +192,8 @@
   line-height: 21px;
   align-items: center;
   text-align: center;
-  // transition-duration: $timeDelay;
-  // transition-timing-function: $cubic;
+  transition-duration: $timeDelay;
+  transition-timing-function: $cubic;
   transition: background-color $timeDelay $cubic;
 
   &:hover,
