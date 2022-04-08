@@ -48,7 +48,6 @@
 .customers-text {
   width: 100%;
   max-width: 157px;
-  font-family: $main-font;
   @include fonts(normal, 500, 12px, 2.58);
   text-align: center;
   margin: 0 auto;
@@ -93,9 +92,17 @@
 }
 
 .customers-name {
-  font-family: $main-font;
   @include fonts(normal, 500, 14px, 1.85);
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 52px;
+
+  @include mq(tablet) {
+    margin-top: 42px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 34px;
+  }
 
   &::before {
     content: '';
