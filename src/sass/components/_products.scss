@@ -57,6 +57,9 @@
   position: relative;
   margin-top: 130px;
   width: 100%;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: $primaryBgProducts;
   border-radius: 24px;
@@ -64,7 +67,7 @@
   padding: 161px 40px 40px 40px;
 
   @include mq(tablet-only) {
-    width: 220px;
+    max-width: 220px;
     margin-right: 20px;
     position: relative;
     margin-top: 17px;
@@ -76,7 +79,7 @@
   }
 
   @include mq(desktop) {
-    width: 330px;
+    max-width: 330px;
     margin-right: 24px;
     margin-top: 0;
   }
@@ -134,10 +137,6 @@
   top: -113px;
   left: 20px;
   background-image: url('../images/products/img-1/img-1-mobile-1x.png');
-
-  @include mq(mobile) {
-    left: 90px;
-  }
 
   @include mq(tablet-only) {
     left: -10px;
