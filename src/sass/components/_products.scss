@@ -89,11 +89,13 @@
     background-size: contain;
 
     @include mq(tablet) {
+      top: -98px;
       width: 220px;
       height: 220px;
     }
 
     @include mq(desktop) {
+      top: -150px;
       width: 335px;
       height: 335px;
     }
