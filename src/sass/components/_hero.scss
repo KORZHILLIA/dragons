@@ -145,7 +145,7 @@ animation-duration: 2.3s;
     font-family: $support-font;
     @include fonts(normal, 400, 26px, 30px); 
     
-    color: white;
+    color: $whiteTextColor;
 
     text-transform: uppercase;
     @include mq (tablet-only) {
@@ -215,7 +215,7 @@ animation-duration: 2.3s;
 
         width: 114px;
 
-        color: white;
+        color: $whiteTextColor;
 
         @include fonts (normal, 400, 8px, 12px);
         font-family: $main-font;
@@ -366,7 +366,7 @@ animation-duration: 2.3s;
 
         border-radius: 50%;
 
-        background-color: white;
+        background-color: $whiteTextColor;
 
     }
 }
@@ -382,7 +382,7 @@ animation-duration: 2.3s;
 
     font-family: $main-font;
 
-    color:white;
+    color:$whiteTextColor;
 
     text-align: right;
 }
