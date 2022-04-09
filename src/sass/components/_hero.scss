@@ -1,6 +1,6 @@
 .hero__section {
   position: relative;
-  z-index: -10;
+  z-index: 0;
 
   padding-top: 193px;
   padding-bottom: 160px;
@@ -102,37 +102,6 @@
 
     width: 236px;
     height: 557px;
-  }
-}
-
-.hero__img--third {
-  position: absolute;
-  z-index: -7;
-
-  bottom: 0;
-  height: auto;
-
-  animation-name: changeOpacity;
-  animation-duration: 2.5s;
-
-  @include mq(tablet-only) {
-    right: 4%;
-
-    width: 168px;
-  }
-
-  @include mq(desktop) {
-    right: 8%;
-
-    width: 293px;
-  }
-
-  @media screen and (min-width: 2250px) {
-    right: 18%;
-  }
-
-  @media screen and (min-width: 3000px) {
-    right: 21%;
   }
 }
 
@@ -314,6 +283,7 @@
 
 .hero__box {
   display: none;
+  position: relative;
 
   @include mq(tablet-only) {
     display: block;
@@ -404,6 +374,37 @@
   color: white;
 
   text-align: right;
+}
+
+.hero__img--third {
+  position: absolute;
+  z-index: -7;
+
+  bottom: -12%;
+  height: auto;
+
+  animation-name: changeOpacity;
+  animation-duration: 2.5s;
+
+  @include mq(tablet-only) {
+    right: 2%;
+
+    width: 168px;
+  }
+
+  @include mq(desktop) {
+    right: 2%;
+
+    width: 293px;
+  }
+
+  @media screen and (min-width: 2250px) {
+    right: 18%;
+  }
+
+  @media screen and (min-width: 3000px) {
+    right: 21%;
+  }
 }
 
 @keyframes changeOpacity {
