@@ -45,18 +45,31 @@
 
   @include mq(tablet-only) {
     bottom: 46px;
-    right: 137px;
+    right: 18%;
 
     width: 324px;
     height: 322px;
   }
 
+
+  @media screen and (min-width: 943px) and (max-width:1279px) {
+    right: 20%;
+  }
+
   @include mq(desktop) {
     bottom: 75px;
-    right: 267px;
+    right: 20%;
 
     width: 538px;
     height: 538px;
+  }
+
+  @media screen and (min-width: 2250px) {
+    right: 25%;
+  }
+
+  @media screen and (min-width: 3000px) {
+    right: 27%;
   }
 }
 
@@ -69,7 +82,7 @@
 
   @include mq(mobile-only) {
     bottom: 0;
-    right: 35px;
+    right: 10%;
 
     width: 171px;
     height: 410px;
@@ -77,7 +90,7 @@
 
   @include mq(tablet-only) {
     bottom: 0;
-    right: 247px;
+    right: 32%;
 
     width: 143px;
     height: 336px;
@@ -85,7 +98,7 @@
 
   @include mq(desktop) {
     bottom: 0;
-    right: 450px;
+    right: 35%;
 
     width: 236px;
     height: 557px;
@@ -103,15 +116,23 @@
   animation-duration: 2.5s;
 
   @include mq(tablet-only) {
-    right: 35px;
+    right: 4%;
 
     width: 168px;
   }
 
   @include mq(desktop) {
-    right: 109px;
+    right: 8%;
 
     width: 293px;
+  }
+
+  @media screen and (min-width: 2250px) {
+    right: 18%;
+  }
+
+  @media screen and (min-width: 3000px) {
+    right: 21%;
   }
 }
 
