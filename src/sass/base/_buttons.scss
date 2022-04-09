@@ -5,6 +5,8 @@
 
   min-width: 63px;
 
+  cursor: pointer;
+
   @include fonts(normal, 400, 8px, 10px);
 
   @include mq(tablet) {
